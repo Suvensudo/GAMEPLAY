@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# NEON DASH — oyun tamamen tarayıcıda çalışır, sunucu tarafı yok.

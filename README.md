@@ -1,11 +1,15 @@
-<div align="center">
+﻿# NEON DASH — Neon Arcade Runner
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Tarayıcıda oynanan neon arcade koşu oyunu (React 18 + Three.js, tek sayfa).
 
-  <h1>Built with AI Studio</h2>
+- **Oyna:** https://suvensudo.github.io/GAMEPLAY/
+- Sürüm: 1.0 (27 Eylül 2026)
+- PWA destekli, çevrimdışı çalışır
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Dosyalar
+- `index.html` — oyunun tamamı
+- `assets/` — React, Three.js, Tailwind (yerel)
+- `sw.js`, `manifest.webmanifest` — PWA
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Kurulum
+Depoyu indir, `index.html` dosyasını tarayıcıda aç. Sunucu gerekmez.

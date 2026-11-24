@@ -1,0 +1,73 @@
+========================================================
+  NEON DASH — Neon Arcade Runner
+  Sürüm 1.0  ·  27 Eylül 2026
+========================================================
+
+NE VAR İÇİNDE
+--------------------------------------------------------
+  index.html            Oyunun tamamı (React + Three.js, tek sayfa)
+  assets/boot.js        Ek katman: ses kilidi, hata yakalama, kayıt yedekleme
+  assets/tailwind.css   Stil dosyası (yerel, CDN'e bağımlı değil)
+  assets/script_0.js    React 18.2.0 (üretim sürümü)
+  assets/script_1.js    Three.js (3B motor)
+  assets/script_2.js    ReactDOM 18.2.0 (üretim sürümü)
+
+  manifest.webmanifest  Uygulama bilgileri — telefona kurulabilir yapar
+  sw.js                 Çevrimdışı çalışma (service worker)
+  icon-192.png          Uygulama ikonu (küçük)
+  icon-512.png          Uygulama ikonu (büyük)
+  favicon.svg           Sekme ikonu
+  og-image.png          Sosyal medya paylaşım görseli
+  robots.txt            Arama motorlarına izin
+
+  gizlilik.html         Gizlilik Politikası (KVKK + GDPR)
+  sartlar.html          Kullanım Şartları
+  lisanslar.html        Lisanslar ve Emeği Geçenler
+
+NASIL YAYINLANIR
+--------------------------------------------------------
+Bu klasör STATİK bir sitedir. Sunucu tarafı kod yok, veritabanı yok,
+kullanıcı hesabı yok, hiçbir yere veri gönderilmez. Herhangi bir statik
+hosting'e olduğu gibi yüklenebilir:
+
+  • Netlify Drop      https://app.netlify.com/drop   (zip'i sürükle-bırak)
+  • Cloudflare Pages  https://pages.cloudflare.com
+  • Vercel            https://vercel.com
+  • GitHub Pages      depo ayarlarından
+
+YAYINA ALDIKTAN SONRA YAPILACAK (1 dakika)
+--------------------------------------------------------
+index.html dosyasının <head> bölümünde şu 3 satır, sitenin GERÇEK
+adresiyle güncellenmelidir. Şu an göreli ("./og-image.png") duruyorlar
+ve bu hâliyle WhatsApp / X / LinkedIn paylaşımlarında görsel çıkmaz:
+
+  <meta property="og:image"  content="./og-image.png">   → tam adres
+  <meta name="twitter:image" content="./og-image.png">   → tam adres
+  <link rel="canonical" ...>                             → eklenecek
+
+YEREL OLARAK ÇALIŞTIRMA
+--------------------------------------------------------
+Dosyayı doğrudan çift tıklayarak açmak yerine basit bir yerel sunucu
+kullanmak gerekir — çünkü service worker ve manifest yalnızca
+http/https üzerinden çalışır:
+
+    npx serve .
+        veya
+    python -m http.server 8000
+
+GELİR VE HAKLAR
+--------------------------------------------------------
+Oyun ve içeriği © 2026 NEON DASH. Tüm hakları saklıdır.
+React, ReactDOM, Three.js ve Tailwind CSS MIT lisansı altındadır;
+tam metinleri lisanslar.html sayfasındadır.
+
+Ticari yayında vergi yükümlülüğü yayıncıya aittir.
+
+GELİŞTİRME NOTU
+--------------------------------------------------------
+Her güncellemede sw.js içindeki CACHE sürümü artırılmalıdır
+(şu an: neon-dash-v4). Aksi hâlde ziyaretçiler eski sürümü görür.
+
+İLETİŞİM
+--------------------------------------------------------
+  neondash.game@gmail.com
